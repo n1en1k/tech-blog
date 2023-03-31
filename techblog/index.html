@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi" lang="fi">
+  <head>
+    <meta name="description" content="tech blog" />
+    <meta name="keywords" content="tech blog" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 Days" />
+    <link
+      rel="shortcut icon"
+      href="./images/techfavicon.png"
+      type="image/png"
+    />
+    <title>tech blog</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/javascripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Prompt"
+    />
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="./css/slider.css" type="text/css" />
+  </head>
+  <body>
+    <div class="mainWrapper">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="./index.html"
+            ><img
+              class="logoImg"
+              src="./images/techBlogLogo.png"
+              alt="food blog"
+          /></a>
+        </div>
+        <!-- logo -->
+        <div class="nav" id="nav">
+          <div class="burger-icon"><i class="fas fa-bars"></i> menu&nbsp;</div>
+          <ul class="nav-items main-nav mobile-hide">
+            <li>
+              <a href="./index.html"
+                ><img src="./images/buttonHouse.png" alt="" class="buttonImg" />
+                Home</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/buttonPad.png" alt="" class="buttonImg" />
+                Blog</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./images/buttonArrowsBlack.png"
+                  alt=""
+                  class="buttonImg"
+                />
+                About Us</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./images/buttonTalkBlack.png"
+                  alt=""
+                  class="buttonImg"
+                />
+                Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- nav -->
+        <div class="banner">
+          <div class="slider">
+            <div class="slides">
+              <!--radio buttons start-->
+              <input type="radio" name="radio-btn" id="radio1" />
+              <input type="radio" name="radio-btn" id="radio2" />
+              <input type="radio" name="radio-btn" id="radio3" />
+              <!--radio buttons end-->
+              <!--slide images start-->
+              <div class="slide first">
+                <img src="./images/techBanner1.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/techBanner2.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/techBanner3.jpg" alt="" />
+              </div>
+              <!--slide images end-->
+              <!--automatic navigation start-->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+              </div>
+              <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+          </div>
+          <!--image slider end-->
+        </div>
+        <!-- banner -->
+        <div class="navsec">
+          <p class="contentP">
+            lorem ipsum dot si amet lorem ipsum dot si amet lorem ipsum dot si
+            amet lorem ipsum dot si amet lorem ipsum dot si ametlorem ipsum dot
+            si amet lorem ipsum dot si amet
+          </p>
+          <p class="contentP">
+            lorem ipsum dot si amet lorem ipsum dot si amet lorem ipsum dot si
+            amet lorem ipsum dot si amet lorem ipsum dot si ametlorem ipsum dot
+            si amet lorem ipsum dot si amet
+          </p>
+          <div class="someButtons">
+            <h3 class="contentH3 leftAlign">Social Media Links</h3>
+            <a class="some" href="#"><i class="fa fa-instagram"></i></a>
+            <a class="some" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="some" href="#"><i class="fa fa-facebook"></i></a>
+          </div>
+          <!-- someButtons -->
+        </div>
+        <!-- navsec -->
+        <div class="email-digest-subscription">
+          <div class="emailFlex">
+            <div class="leftEmail">
+              <h4 class="digest-subscription-h4">Weekly Email Update</h4>
+              <h5 class="digest-subscription-h5">
+                Subscribe below and we'll send you a weekly email summary of our
+                latest news!
+              </h5>
+            </div>
+            <div class="rightEmail">
+              <form
+                onsubmit="return validateSecondForm()"
+                name="subscribe"
+                id="subscribe"
+                action="./cgi-bin/manage.php"
+                accept-charset="UTF-8"
+                method="post"
+              >
+                <p>
+                  <input
+                    placeholder="Email Address"
+                    class="email"
+                    type="email"
+                    id="email"
+                    name="email"
+                    maxlength="150"
+                  />
+
+                  <!--	<input type="radio" id="action_sub" name="action"
+							   value="sub" checked />
+						<label for="action_sub">subscribe</label><br/>
+						<input type="radio" id="action_unsub" name="action"
+							  value="unsub" />
+						<label for="action_unsub">unsubscribe</label>
+						<br /> -->
+                  <button
+                    type="submit"
+                    name="submit"
+                    class="subscribe"
+                    value="submit"
+                  >
+                    Submit
+                  </button>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- email-digest-subscription -->
+        <div class="smalldataone">
+          <img class="contentImg" src="./images/techMiniBanner1.jpg" alt="" />
+          <h3 class="contentH3">Lorem ip</h3>
+          <p class="contentP">lorem ipsum dot si amet lorem ipsum</p>
+          <p class="contentP">
+            lorem ipsum si amet lorem ipsum dot si amet lorem ipsum dot si lorem
+            ipsum dot si amet lorem ipsum dot si ametlorem ipsum dot amet lorem
+            ipsum dot si amet
+          </p>
+        </div>
+        <!-- smalldataone -->
+        <div class="smalldatatwo">
+          <img class="contentImg" src="./images/techMiniBanner2.jpg" alt="" />
+          <h3 class="contentH3">Lorem ip</h3>
+          <p class="contentP">lorem ipsum dot si amet lorem ipsum</p>
+          <p class="contentP">
+            lorem ipsum dot si amet lorem ipsum dot si amet lorem ipsum dot si
+            lorem ipsum dot amet lorem ipsum dot si ametlorem ipsum dot si amet
+            lorem ipsum dot si amet
+          </p>
+        </div>
+        <!-- smalldataone -->
+        <div class="smalldatathree">
+          <img class="contentImg" src="./images/techMiniBanner3.jpg" alt="" />
+          <h3 class="contentH3">Lorem ip</h3>
+          <p class="contentP">lorem ipsum dot si amet lorem ipsum</p>
+          <p class="contentP">
+            lorem ipsum dot si amet ipsum dot si amet lorem ipsum dot si lorem
+            ipsum dot si amet lorem ipsum dot si ametlorem ipsum si amet lorem
+            ipsum dot si amet
+          </p>
+        </div>
+        <!-- smalldataone -->
+      </div>
+      <!-- wrapper -->
+    </div>
+    <!-- mainWrapper-->
+
+    <div class="copy">
+      <p><a href="#">&copy; 2021</a></p>
+    </div>
+    <!-- copy-->
+  </body>
+</html>
